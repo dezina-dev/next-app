@@ -1,30 +1,18 @@
-# TypeScript Next.js example
+# TypeScript Next.js app
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+This demonstrates the chat app, with users & groups. Backend is done in node.js & mongodb.
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-typescript)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
-
-## How to use it?
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-typescript with-typescript-app
+## How to start?
+```
+npm run dev
 ```
 
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
-
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Contents
+- Sign in, sign out, logout
+- After sign in displays the my chat page where you can chat with available users
+- In My groups page, shows the create group option & also list of groups if created by you or part of.
+    - can add group members & delete members & groups
+    - also can chat with group members
 
 ## Notes
 
