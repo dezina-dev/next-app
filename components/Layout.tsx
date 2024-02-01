@@ -45,6 +45,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
           <Link href="/users" className="text-white hover:text-gray-300 mr-4">
             Users List
           </Link>
+          <Link href='/todos' className="text-white hover:text-gray-300 mr-4">Todo's (SSR)</Link>
 
           {/* Conditionally render Signup & Logout based on user login */}
           {!user && (

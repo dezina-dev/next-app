@@ -221,6 +221,7 @@ const GroupsPage = () => {
 
     const handleConfirmDelete = async () => {
         if (deleteUserId) {
+            // deleting member from group
             try {
                 const response = await fetch(`/api/groups?groupId=${groupId}&deleteUserId=${deleteUserId}`, {
                     method: 'DELETE',
@@ -245,6 +246,7 @@ const GroupsPage = () => {
                 setDeleteModalOpen(false);
             }
         } else if (deleteUserId === null) {
+            // deleting group
             const storedUser = JSON.parse(localStorage.getItem('user'));
             try {
                 const response = await fetch(`/api/groups?group=${groupId}&createdBy=${storedUser?._id}`, {
@@ -395,7 +397,9 @@ const GroupsPage = () => {
                                     ))
                                 }
                                 {/* Modal for delete confirmation */}
-                                <DeleteModal isOpen={isDeleteModalOpen} onCancel={handleCancelDelete} onConfirm={handleConfirmDelete} />
+                                <DeleteModal isOpen={isDeleteModalOpen} onCancel={handleCancelDelete} 
+                                onConfirm={handleConfirmDelete} />
+                        
                             </>
 
                         )
